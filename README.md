@@ -18,7 +18,9 @@ python3 -m http.server 8080
 
 ## GitHub Pages
 
-Deploy from **main**, folder **/** (root). Live at `https://kunyi523.github.io/your-hair-salon-hamilton/`.
+Deploy from **main**, folder **/** (root). Intended live URL: `https://kunyi523.github.io/your-hair-salon-hamilton/`.
+
+If the site is not live yet, enable it once in the repo: **Settings → Pages → Deploy from a branch → `main` / (root) → Save**. The Pages admin API is not available to this token.
 
 ## What’s on the page
 
