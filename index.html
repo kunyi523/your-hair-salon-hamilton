@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Your Hair Salon — Hamilton</title>
+  <meta name="description" content="Your Hair Salon, a neighbourhood hair salon on Barton Street East in Hamilton. Call 905-549-8889. Unofficial sample — not affiliated.">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="canonical" href="https://kunyi523.github.io/your-hair-salon-hamilton/">
+  <meta property="og:title" content="Your Hair Salon — Hamilton">
+  <meta property="og:description" content="Hair salon on Barton Street East in Hamilton. Call 905-549-8889.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:url" content="https://kunyi523.github.io/your-hair-salon-hamilton/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&amp;fit=crop&amp;w=1400&amp;q=80">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Your Hair Salon",
+    "telephone": "+19055498889",
+    "email": "liansitan@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1530 Barton St E",
+      "addressLocality": "Hamilton",
+      "addressRegion": "ON",
+      "postalCode": "L8H 2X6",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.2470036,
+      "longitude": -79.7977242
+    },
+    "url": "https://kunyi523.github.io/your-hair-salon-hamilton/",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "57",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "15:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --color-primary: #e3b36a;
+      --color-primary-active: #f0c57e;
+      --color-ink: #ffffff;
+      --color-body: #c8c4bc;
+      --color-body-strong: #e8e4dc;
+      --color-muted: #8a8478;
+      --color-muted-soft: #5c574e;
+      --color-hairline: #2a2824;
+      --color-hairline-strong: #3d3932;
+      --color-canvas: #0b0c0e;
+      --color-surface-soft: #121418;
+      --color-surface-card: #181a1e;
+      --color-surface-elevated: #22252b;
+      --color-on-primary: #12100c;
+      --color-on-dark: #ffffff;
+      --font-primary: Inter, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --max: 1200px;
+      --sticky-h: 5.5rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      color-scheme: dark;
+    }
+    * { -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0;
+      background: var(--color-canvas);
+      color: var(--color-ink);
+      font-family: var(--font-primary);
+      font-size: 16px;
+      line-height: 1.55;
+      text-rendering: optimizeLegibility;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--color-primary); text-underline-offset: 0.18em; }
+    a:hover { color: var(--color-ink); }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+    .skip {
+      position: absolute; left: 0.75rem; top: -3rem; z-index: 40;
+      background: var(--color-primary); color: var(--color-on-primary);
+      padding: 0.5rem 0.85rem; font-weight: 600; text-decoration: none; border-radius: var(--radius-md);
+    }
+    .skip:focus { top: 0.75rem; }
+    .page {
+      min-height: 100vh;
+      min-height: 100dvh;
+      overflow-x: hidden;
+      padding-bottom: calc(var(--sticky-h) + env(safe-area-inset-bottom, 0px));
+    }
+    .wrap {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 max(1rem, env(safe-area-inset-right, 0px)) 0 max(1rem, env(safe-area-inset-left, 0px));
+    }
+    .disclaimer-bar {
+      background: var(--color-surface-card);
+      border-bottom: 1px solid var(--color-hairline);
+      color: var(--color-muted);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      line-height: 1.4;
+    }
+    .site-header {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(11, 12, 14, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--color-hairline);
+    }
+    .site-header .wrap {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      min-height: 64px;
+    }
+    .wordmark {
+      display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--color-ink);
+      min-height: 44px; justify-content: center;
+    }
+    .wordmark strong {
+      font-size: 0.95rem; font-weight: 700; letter-spacing: -0.3px; line-height: 1.2;
+    }
+    .wordmark span {
+      font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--color-muted); font-weight: 500;
+    }
+    .nav { display: none; align-items: center; gap: 1.35rem; }
+    .nav a {
+      color: var(--color-body); text-decoration: none; font-size: 14px; font-weight: 500;
+    }
+    .nav a:hover { color: var(--color-primary); }
+    .btn-header { display: none; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 56px; padding: 12px 20px;
+      border-radius: var(--radius-md);
+      text-decoration: none; font-family: var(--font-primary);
+      font-size: 14px; font-weight: 600; line-height: 1;
+      border: 1px solid transparent; touch-action: manipulation;
+    }
+    .btn-call {
+      background: var(--color-primary); color: var(--color-on-primary);
+    }
+    .btn-call:hover { background: var(--color-primary-active); color: var(--color-on-primary); }
+    .btn-ghost {
+      background: var(--color-surface-card); color: var(--color-on-dark);
+      border-color: var(--color-hairline-strong);
+    }
+    .btn-ghost:hover { background: var(--color-surface-elevated); color: var(--color-ink); }
+    .btn-on-copper {
+      background: var(--color-on-primary); color: var(--color-primary);
+    }
+    .btn-on-copper:hover { background: #1a1814; color: var(--color-primary); }
+    .kicker, .section-label {
+      margin: 0;
+      font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--color-primary); line-height: 1.4;
+    }
+    .hero { padding: 2.5rem 0 1.5rem; }
+    .hero h1 {
+      margin: 0.5rem 0 0;
+      font-size: clamp(2.35rem, 11vw, 4.5rem);
+      line-height: 1.05; letter-spacing: -2px; font-weight: 700;
+    }
+    .lede {
+      margin: 1rem 0 0; max-width: 40rem;
+      font-size: 16px; line-height: 1.55; color: var(--color-body);
+    }
+    .today-chip {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      margin: 1rem 0 0; padding: 0.4rem 0.75rem;
+      border: 1px solid var(--color-hairline-strong);
+      border-radius: 9999px;
+      color: var(--color-body-strong);
+      font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.02em;
+    }
+    .today-chip::before {
+      content: ""; width: 0.45rem; height: 0.45rem; border-radius: 50%;
+      background: var(--color-primary);
+    }
+    .today-chip.is-closed::before { background: var(--color-muted); }
+    .hero-aside { display: none; }
+    .cta-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin: 1.35rem 0 0;
+    }
+    .stats {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem; margin: 1.6rem 0 0;
+    }
+    .stat {
+      background: var(--color-surface-card);
+      border: 1px solid var(--color-hairline);
+      border-radius: var(--radius-lg);
+      padding: 16px 12px;
+    }
+    .stat b {
+      display: block; font-size: clamp(1.15rem, 4vw, 1.7rem);
+      line-height: 1.1; letter-spacing: -1px; color: var(--color-primary); font-weight: 700;
+    }
+    .stat span { display: block; margin-top: 0.4rem; color: var(--color-muted); font-size: 13px; line-height: 1.4; }
+    section { padding: 3rem 0 0.25rem; }
+    .section-head { margin-bottom: 1.25rem; max-width: 42rem; }
+    h2 {
+      margin: 0.4rem 0 0.5rem;
+      font-size: clamp(1.75rem, 6vw, 2.5rem);
+      line-height: 1.15; letter-spacing: -1px; font-weight: 700;
+    }
+    h3 { margin: 0; }
+    .section-intro { margin: 0; color: var(--color-muted); }
+    .photos { display: grid; gap: 0.75rem; }
+    figure {
+      margin: 0; background: var(--color-surface-card);
+      border: 1px solid var(--color-hairline); border-radius: var(--radius-lg); overflow: hidden;
+    }
+    figure img { width: 100%; height: 16rem; object-fit: cover; background: var(--color-surface-elevated); }
+    .phone-lg {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: clamp(1.65rem, 7vw, 2.4rem);
+      font-weight: 500; letter-spacing: -1px; line-height: 1.1;
+      color: var(--color-ink); text-decoration: none;
+    }
+    .phone-lg:hover { color: var(--color-primary); }
+    .mail {
+      display: inline-block;
+      margin-top: 0.55rem;
+      font-family: var(--font-mono);
+      font-size: 14px;
+      color: var(--color-ink);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .mail:hover { color: var(--color-primary); }
+    .addr { font-style: normal; color: var(--color-body); margin: 0.5rem 0 0; }
+    .overview-grid { display: flex; flex-direction: column; gap: 1.75rem; }
+    .chips {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem;
+      margin: 0; padding: 0; list-style: none;
+    }
+    .chips li {
+      background: var(--color-surface-card);
+      border: 1px solid var(--color-hairline);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+    }
+    .chips b { display: block; font-size: 16px; font-weight: 600; letter-spacing: -0.3px; }
+    .chips span { display: block; margin-top: 0.3rem; color: var(--color-muted); font-size: 13px; }
+    .hours-list {
+      list-style: none; margin: 0; padding: 0;
+      border-top: 1px solid var(--color-hairline);
+    }
+    .hours-list li {
+      display: flex; justify-content: space-between; gap: 1rem;
+      padding: 0.85rem 0.1rem; border-bottom: 1px solid var(--color-hairline);
+      font-family: var(--font-mono); font-size: 14px;
+    }
+    .hours-list .closed { color: var(--color-muted); }
+    .hours-list .is-today {
+      background: rgba(227, 179, 106, 0.08);
+      box-shadow: inset 3px 0 0 var(--color-primary);
+      padding-left: 0.75rem;
+    }
+    .today-tag {
+      margin-left: 0.45rem; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--color-on-primary); background: var(--color-primary);
+      padding: 0.12rem 0.4rem; border-radius: 4px; font-family: var(--font-primary); font-weight: 600;
+    }
+    .hours-layout { display: flex; flex-direction: column; gap: 1.4rem; }
+    .map-wrap {
+      margin: 0.7rem 0 0.85rem; background: var(--color-surface-card);
+      border: 1px solid var(--color-hairline); border-radius: var(--radius-lg); overflow: hidden;
+      min-height: 14rem;
+    }
+    .map-wrap iframe {
+      display: block; width: 100%; height: 16.5rem; border: 0;
+    }
+    .visit-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin: 0.35rem 0 0; }
+    .note { color: var(--color-muted); font-size: 14px; margin: 0.9rem 0 0; }
+    .cta-band {
+      margin-top: 3rem;
+      background: var(--color-primary); color: var(--color-on-primary);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.25rem;
+    }
+    .cta-band h2 { color: var(--color-on-primary); letter-spacing: -1px; }
+    .cta-band p { margin: 0.5rem 0 1.15rem; color: #1a1814; max-width: 36rem; }
+    .cta-band .phone-lg { color: var(--color-on-primary); }
+    .cta-band .phone-lg:hover { color: #242424; }
+    .cta-band .mail { color: var(--color-on-primary); }
+    .cta-band .mail:hover { color: #242424; }
+    .site-footer {
+      margin-top: 2.5rem; padding: 1.35rem 0 1.6rem;
+      border-top: 1px solid var(--color-hairline);
+      color: var(--color-muted); font-size: 13px; line-height: 1.55;
+    }
+    .site-footer p { margin: 0 0 0.5rem; }
+    .site-footer p:last-child { margin-bottom: 0; }
+    .sticky {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+      background: rgba(11, 12, 14, 0.94); backdrop-filter: blur(14px);
+      border-top: 1px solid var(--color-hairline);
+      padding: 0.7rem 0.85rem calc(0.7rem + env(safe-area-inset-bottom, 0px));
+    }
+    .sticky-inner {
+      width: 100%; max-width: 28rem; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem;
+    }
+    @media (min-width: 900px) {
+      .page { padding-bottom: 0; }
+      .sticky { display: none; }
+      .wrap { padding-left: 2rem; padding-right: 2rem; }
+      .nav { display: flex; }
+      .btn-header { display: inline-flex; min-height: 40px; padding: 10px 16px; }
+      .hero { padding: 4.5rem 0 2rem; }
+      .hero-grid {
+        display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.7fr);
+        gap: 3.5rem; align-items: end;
+      }
+      .lede { font-size: 18px; line-height: 1.69; }
+      .cta-row { display: flex; max-width: 28rem; }
+      .cta-row .btn { min-width: 11rem; }
+      section { padding: 6rem 0 0.4rem; }
+      .photos { grid-template-columns: 1.15fr 0.85fr; }
+      figure img { height: 22rem; }
+      .overview-grid {
+        display: grid; grid-template-columns: 1.05fr 0.95fr;
+        gap: 2.5rem 3.5rem; align-items: start;
+      }
+      .chips { grid-template-columns: repeat(3, 1fr); }
+      .hours-layout {
+        display: grid; grid-template-columns: 1.15fr 0.85fr;
+        gap: 3rem; align-items: start;
+      }
+      .map-wrap iframe { height: 22rem; }
+      .cta-band { padding: 4rem 3rem; }
+      .hero-aside {
+        display: block;
+        border-left: 1px solid var(--color-hairline);
+        padding-left: 2rem;
+      }
+      .hero-hours { list-style: none; margin: 0.85rem 0 0; padding: 0; color: var(--color-body); font-size: 14px; }
+      .hero-hours li {
+        display: flex; justify-content: space-between; gap: 1rem;
+        padding: 0.4rem 0; border-bottom: 1px solid var(--color-hairline);
+        font-family: var(--font-mono);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#visit">Skip to visit</a>
+  <div class="page">
+    <p class="disclaimer-bar">Unofficial sample — not affiliated</p>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="wordmark" href="#visit">
+          <strong>Your Hair Salon</strong>
+          <span>Hamilton</span>
+        </a>
+        <nav class="nav" aria-label="Page">
+          <a href="#reviews">Reviews</a>
+          <a href="#hours">Hours &amp; map</a>
+          <a href="mailto:liansitan@gmail.com">Email</a>
+        </nav>
+        <a class="btn btn-call btn-header" href="tel:+19055498889">Call</a>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <section class="hero" aria-label="Your Hair Salon">
+        <div class="hero-grid">
+          <div>
+            <p class="kicker">Barton Street East · Hamilton</p>
+            <h1>Hair salon on Barton East.</h1>
+            <p class="lede">Your Hair Salon is a neighbourhood shop on Barton Street East in Hamilton — Canadian owned since 2004. Call Liansi to book a chair, or send a note by email.</p>
+            <p class="today-chip" id="today-chip">Mon–Sat</p>
+            <div class="cta-row">
+              <a class="btn btn-call" href="tel:+19055498889">Call 905-549-8889</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=1530+Barton+St+E,+Hamilton,+ON+L8H+2X6" rel="noopener">Directions</a>
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <b>4.5★</b>
+                <span>~57 Google reviews</span>
+              </div>
+              <div class="stat">
+                <b>Barton</b>
+                <span>Hamilton East</span>
+              </div>
+              <div class="stat">
+                <b>2004</b>
+                <span>Neighbourhood shop</span>
+              </div>
+            </div>
+          </div>
+          <aside class="hero-aside">
+            <p class="kicker">Call the salon</p>
+            <p><a class="phone-lg" href="tel:+19055498889">905-549-8889</a></p>
+            <ul class="hero-hours">
+              <li><span>Most days</span><span>9:00 AM–9:00 PM</span></li>
+              <li><span>Wednesday</span><span>3:00–9:00 PM</span></li>
+              <li><span>Saturday</span><span>9:00 AM–6:00 PM</span></li>
+              <li><span>Sunday</span><span>Closed</span></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="photos" aria-label="Salon atmosphere">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Salon chairs and a workstation." width="1400" height="933" fetchpriority="high" decoding="async">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Hair salon station with a mirror." width="1200" height="800" decoding="async">
+        </figure>
+      </section>
+
+      <section id="visit">
+        <div class="section-head">
+          <p class="section-label">Visit</p>
+          <h2>Come down Barton East.</h2>
+          <p class="section-intro">Call the salon, email if that’s easier, or use the map for directions.</p>
+        </div>
+        <div class="overview-grid">
+          <div>
+            <p><a class="phone-lg" href="tel:+19055498889">905-549-8889</a></p>
+            <a class="mail" href="mailto:liansitan@gmail.com">liansitan@gmail.com</a>
+            <address class="addr">
+              Your Hair Salon<br>
+              1530 Barton St E<br>
+              Hamilton, ON L8H 2X6
+            </address>
+            <a class="note" href="#hours">Hours and map</a>
+          </div>
+          <div>
+            <p class="kicker">In the chair</p>
+            <ul class="chips" style="margin-top:0.85rem">
+              <li><b>Cuts</b><span>Everyday salon work</span></li>
+              <li><b>Colour</b><span>Ask when you call</span></li>
+              <li><b>Liansi</b><span>Stylist on Barton East</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <div class="section-head">
+          <p class="section-label">Reviews</p>
+          <h2>About 4.5★ from ~57 Google reviews.</h2>
+          <p class="section-intro"><a href="https://www.google.com/maps?cid=9754564890788107983" rel="noopener noreferrer" target="_blank">Read reviews on Google</a></p>
+        </div>
+      </section>
+
+      <section id="hours">
+        <div class="section-head">
+          <p class="section-label">Hours</p>
+          <h2>When we’re open.</h2>
+          <p class="section-intro">Monday, Tuesday, Thursday and Friday 9:00 AM–9:00 PM. Wednesday 3:00–9:00 PM. Saturday 9:00 AM–6:00 PM. Sunday closed.</p>
+        </div>
+        <div class="hours-layout">
+          <div>
+            <ul class="hours-list">
+              <li data-day="mon"><span class="day">Monday</span><span>9:00 AM–9:00 PM</span></li>
+              <li data-day="tue"><span class="day">Tuesday</span><span>9:00 AM–9:00 PM</span></li>
+              <li data-day="wed"><span class="day">Wednesday</span><span>3:00–9:00 PM</span></li>
+              <li data-day="thu"><span class="day">Thursday</span><span>9:00 AM–9:00 PM</span></li>
+              <li data-day="fri"><span class="day">Friday</span><span>9:00 AM–9:00 PM</span></li>
+              <li data-day="sat"><span class="day">Saturday</span><span>9:00 AM–6:00 PM</span></li>
+              <li data-day="sun"><span class="day">Sunday</span><span class="closed">Closed</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="kicker">Map</p>
+            <h3 style="margin:0.4rem 0 0.35rem;font-size:1.35rem;letter-spacing:-0.5px">1530 Barton St E</h3>
+            <p class="section-intro">Hamilton, ON L8H 2X6.</p>
+            <div class="map-wrap">
+              <iframe title="Map of 1530 Barton St E, Hamilton, Ontario" src="https://maps.google.com/maps?q=1530%20Barton%20St%20E%2C%20Hamilton%2C%20ON%20L8H%202X6&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+            <div class="visit-actions">
+              <a class="btn btn-call" href="tel:+19055498889">Call salon</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=1530+Barton+St+E,+Hamilton,+ON+L8H+2X6" rel="noopener">Get directions</a>
+            </div>
+            <p class="note"><a href="https://www.google.com/maps?cid=9754564890788107983" rel="noopener noreferrer" target="_blank">Open in Google Maps</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" aria-label="Call the salon">
+        <p class="kicker" style="color:#3a2e18">Hamilton</p>
+        <h2>Call Your Hair Salon</h2>
+        <p>Barton Street East, Hamilton. We’ll take the call.</p>
+        <p><a class="phone-lg" href="tel:+19055498889">905-549-8889</a></p>
+        <p><a class="mail" href="mailto:liansitan@gmail.com">liansitan@gmail.com</a></p>
+        <div class="cta-row" style="max-width:28rem">
+          <a class="btn btn-on-copper" href="tel:+19055498889">Call now</a>
+          <a class="btn btn-on-copper" href="https://www.google.com/maps/dir/?api=1&amp;destination=1530+Barton+St+E,+Hamilton,+ON+L8H+2X6" rel="noopener">Directions</a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Unofficial sample — not affiliated with Your Hair Salon.</p>
+        <p>Photos are stock; hours from public listings — easy to correct.</p>
+      </footer>
+    </div>
+
+    <div class="sticky" role="navigation" aria-label="Call or directions">
+      <div class="sticky-inner">
+        <a class="btn btn-call" href="tel:+19055498889">Call 905-549-8889</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=1530+Barton+St+E,+Hamilton,+ON+L8H+2X6" rel="noopener">Directions</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var weekday = new Intl.DateTimeFormat("en-US", { timeZone: "America/Toronto", weekday: "short" }).format(new Date()).slice(0, 3).toLowerCase();
+      var openUntil = { mon: "9:00 PM", tue: "9:00 PM", wed: "9:00 PM", thu: "9:00 PM", fri: "9:00 PM", sat: "6:00 PM" };
+      var row = document.querySelector('[data-day="' + weekday + '"]');
+      if (row) {
+        row.classList.add("is-today");
+        var tag = document.createElement("span");
+        tag.className = "today-tag";
+        tag.textContent = "Today";
+        row.querySelector(".day").appendChild(tag);
+      }
+      var chip = document.getElementById("today-chip");
+      if (!chip) return;
+      if (weekday === "wed") {
+        chip.textContent = "Open today 3:00–9:00 PM";
+      } else if (openUntil[weekday]) {
+        chip.textContent = "Open today until " + openUntil[weekday];
+      } else {
+        chip.textContent = "Closed today";
+        chip.classList.add("is-closed");
+      }
+    })();
+  </script>
+</body>
+</html>
