@@ -48,13 +48,13 @@
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.5",
-      "reviewCount": "57",
+      "reviewCount": "65",
       "bestRating": "5"
     },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday"],
+        "dayOfWeek": ["Tuesday", "Thursday", "Friday"],
         "opens": "09:00",
         "closes": "21:00"
       },
@@ -418,8 +418,8 @@
           <div>
             <p class="kicker">Barton Street East · Hamilton</p>
             <h1>Hair salon on Barton East.</h1>
-            <p class="lede">Your Hair Salon is a neighbourhood shop on Barton Street East in Hamilton — Canadian owned since 2004. Call Liansi to book a chair, or send a note by email.</p>
-            <p class="today-chip" id="today-chip">Mon–Sat</p>
+            <p class="lede">Your Hair Salon is a neighbourhood shop on Barton Street East in Hamilton. Call Liansi to book a chair, or send a note by email.</p>
+            <p class="today-chip" id="today-chip">Tue–Sat</p>
             <div class="cta-row">
               <a class="btn btn-call" href="tel:+19055498889">Call 905-549-8889</a>
               <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=1530+Barton+St+E,+Hamilton,+ON+L8H+2X6" rel="noopener">Directions</a>
@@ -427,15 +427,15 @@
             <div class="stats">
               <div class="stat">
                 <b>4.5★</b>
-                <span>~57 Google reviews</span>
+                <span>60+ Google reviews</span>
               </div>
               <div class="stat">
                 <b>Barton</b>
                 <span>Hamilton East</span>
               </div>
               <div class="stat">
-                <b>2004</b>
-                <span>Neighbourhood shop</span>
+                <b>Tue–Sat</b>
+                <span>Open days</span>
               </div>
             </div>
           </div>
@@ -443,7 +443,8 @@
             <p class="kicker">Call the salon</p>
             <p><a class="phone-lg" href="tel:+19055498889">905-549-8889</a></p>
             <ul class="hero-hours">
-              <li><span>Most days</span><span>9:00 AM–9:00 PM</span></li>
+              <li><span>Monday</span><span>Closed</span></li>
+              <li><span>Tue / Thu / Fri</span><span>9:00 AM–9:00 PM</span></li>
               <li><span>Wednesday</span><span>3:00–9:00 PM</span></li>
               <li><span>Saturday</span><span>9:00 AM–6:00 PM</span></li>
               <li><span>Sunday</span><span>Closed</span></li>
@@ -492,7 +493,7 @@
       <section id="reviews">
         <div class="section-head">
           <p class="section-label">Reviews</p>
-          <h2>About 4.5★ from ~57 Google reviews.</h2>
+          <h2>About 4.5★ from 60+ Google reviews.</h2>
           <p class="section-intro"><a href="https://www.google.com/maps?cid=9754564890788107983" rel="noopener noreferrer" target="_blank">Read reviews on Google</a></p>
         </div>
       </section>
@@ -501,12 +502,12 @@
         <div class="section-head">
           <p class="section-label">Hours</p>
           <h2>When we’re open.</h2>
-          <p class="section-intro">Monday, Tuesday, Thursday and Friday 9:00 AM–9:00 PM. Wednesday 3:00–9:00 PM. Saturday 9:00 AM–6:00 PM. Sunday closed.</p>
+          <p class="section-intro">Tuesday, Thursday and Friday 9:00 AM–9:00 PM. Wednesday 3:00–9:00 PM. Saturday 9:00 AM–6:00 PM. Sunday and Monday closed.</p>
         </div>
         <div class="hours-layout">
           <div>
             <ul class="hours-list">
-              <li data-day="mon"><span class="day">Monday</span><span>9:00 AM–9:00 PM</span></li>
+              <li data-day="mon"><span class="day">Monday</span><span class="closed">Closed</span></li>
               <li data-day="tue"><span class="day">Tuesday</span><span>9:00 AM–9:00 PM</span></li>
               <li data-day="wed"><span class="day">Wednesday</span><span>3:00–9:00 PM</span></li>
               <li data-day="thu"><span class="day">Thursday</span><span>9:00 AM–9:00 PM</span></li>
@@ -559,7 +560,7 @@
   <script>
     (function () {
       var weekday = new Intl.DateTimeFormat("en-US", { timeZone: "America/Toronto", weekday: "short" }).format(new Date()).slice(0, 3).toLowerCase();
-      var openUntil = { mon: "9:00 PM", tue: "9:00 PM", wed: "9:00 PM", thu: "9:00 PM", fri: "9:00 PM", sat: "6:00 PM" };
+      var openUntil = { tue: "9:00 PM", wed: "9:00 PM", thu: "9:00 PM", fri: "9:00 PM", sat: "6:00 PM" };
       var row = document.querySelector('[data-day="' + weekday + '"]');
       if (row) {
         row.classList.add("is-today");
